@@ -1,0 +1,29 @@
+{
+  "name": "node-api-template",
+  "version": "0.0.1",
+  "author": "Nolan Leung (nolanleung)",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon",
+    "test": "jest __tests__",
+    "test:coverage": "jest __tests__ --coverage",
+    "migrate": "npx knex migrate:latest"
+  },
+  "dependencies": {
+    "@koa/router": "^8.0.6",
+    "dotenv": "^8.2.0",
+    "glob": "^7.1.6",
+    "knex": "^0.20.8",
+    "koa": "^2.11.0",
+    "lodash": "^4.17.15",
+    "pg": "^7.17.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.9.1",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "rosie": "^2.0.1",
+    "supertest": "^4.0.2"
+  }
+}
